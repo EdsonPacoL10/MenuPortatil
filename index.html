@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0,maximun-scale=3.0, minimun-scale=1.0">
+    <title>Your Restaurant</title>
+    <link rel="icon" href="icon/telefono.ico"><!--icono de la pagina inicial esta dado de manera local-->
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://file.myfontastic.com/HP8LK3o4a97kcNSn47tm28/icons.css" rel="stylesheet"><!--link de la pagina de iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para la alerta de pantalla completa */
+        .fullscreen-alert {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        .fullscreen-alert-content {
+            text-align: center;
+            color: white;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 54px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Alerta de pantalla completa -->
+    <div class="fullscreen-alert" id="fullscreenAlert">
+        <div class="fullscreen-alert-content">
+            <button class="close-button" onclick="closeFullscreenAlert()">&times;</button>
+            <h1>¡Alerta de proyecto!</h1>
+            <h3>Este proyecto es simplemente un ejemplo de una propuesta para un menú portátil con el objetivo de mejorar la experiencia de los clientes. Durante el proceso de producción, se pueden hacer mejoras y cumplir con otros requisitos necesarios.</h3>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50"><!--(column column--50)son clases del CSS son clases con modificadores que se puede ver en el css--> 
+                <h1 class="logo">Mi Restaurant</h1>
+            </div>
+            <div class="main-header__contacInfo column column--50">
+                <p class="main-header__contacInfo__phone">
+                    <spam class="icon-phone">999-9999-999</spam>
+                </p>
+                <p class="main-header__contacInfo__address">
+                    <spam class="icon-map">el Prado</spam>
+                </p>
+            </div>
+        </div>
+    </header>  
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span><!--icono del menu-->
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="#" class="menu__link menu__link--select">inicio</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">nosotros</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">galeria</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">contacto</a></li>
+            </ul>
+            <div class="social-icon">
+            <a href="" class="social-icon__link"><span class="icon-facebook"></span><!--iconos de redes sociales-->
+            </a>
+            <a href="" class="social-icon__link"><span class="icon-twitter"></span>
+            </a>
+            <a href="" class="social-icon__link"><span class="icon-google"></span>
+            </a>
+        </div>
+        </div>
+    </nav> 
+    <section class="banner">
+        <img src="icon/comida3.jpg" alt="" class="banner__img">
+        <div class="banner_content">la mejor comida</div>
+    </section>
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">bienbenido al Restaurant</h2>
+                <p class="main__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo ea repudiandae inventore eaque voluptas itaque aut quasi odio
+                    , nihil hic tempora explicabo ex vel porro nobis, omnis, nostrum facilis.</p>
+            </div>
+        </section>
+        <section class="group main__about__description">
+            <div class="container container--flex">
+                <div class="column column--50">
+                    <img src="" alt="">
+                </div>
+                <div class="column column--50">
+                    <h3 class="column__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam amet provident dolorem molestiae quisquam corporis atque tenetur voluptate, tempora, quo 
+                        illum voluptatum dolore sint debitis magni! Minima omnis enim fuga.</h3>
+                    <p class="column_txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab perferendis, repellat consectetur animi debitis iusto porro voluptas eveniet distinctio dolorem magni neque nam optio ex corru
+                        pti nesciunt doloremque accusantium quisquam.</p>
+                        <a href="" class="btm btn--contact">contact</a>
+                    </div>
+            </div>
+        </section>
+    <section class="group today-special">
+        <h2 class="group__title">especiales de hoy</h2>
+    <div class="container container--flex">
+        <div class="column column--50-25">
+            <img src="icon/comida.jpg" alt="" class="today-special__img">
+            <div class="today-special__title">especial del dia 1</div>
+            <div class="today-special__price">$99</div>
+        </div>
+        <div class="column column--50-25">
+            <img src="icon/comida1.jpg" alt="" class="today-special__img">
+            <div class="today-special__title">especial del dia 2</div>
+            <div class="today-special__price">$99</div>
+        </div>
+        <div class="column column--50-25">
+            <img src="icon/comida2.jpg" alt="" class="today-special__img">
+            <div class="today-special__title">especial del dia 3</div>
+            <div class="today-special__price">$99</div>
+        </div>
+        <div class="column column--50-25">
+            <img src="icon/comida3.jpg" alt="" class="today-special__img">
+            <div class="today-special__title">especial del dia 4</div>
+            <div class="today-special__price">$99</div>
+        </div>
+    </div>             
+    </section>
+      </main>
+    <footer class="main-footer">
+        <div class="continer container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">porque visitarnos</h2>
+                <p class="column_txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, accusamus in hic laborum repellat minus numquam quam commodi vitae, magni veniam illum odit architecto cupiditate possimus quo explicabo quisquam quia.</p>   
+            </div>
+            <div class="column column--33">
+            <h2 class="column__title">contactos</h2>
+            <p class="column_txt">el prado</p>
+            <p class="column_txt">telefono</p>
+            <p class="column_txt">Restaurant@gmail.com</p>
+        </div>
+            <div class="column column--33">
+            <h2 class="column__title">redes sociales</h2>
+            <p class="column_txt"><a href="#" class="icon-facebook">facebook</a></p>
+            <p class="column_txt"><a href="#" class="icon-twitter">twitter</a></p>
+            <p class="column_txt"><a href="#" class="icon-google">gmail</a></p>
+        </div>
+        <p class="copy">2022 mi resturant</p>
+        </div>
+
+    </footer>    
+    <script src="menu.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+        // Función para cerrar la alerta
+        function closeFullscreenAlert() {
+            document.getElementById('fullscreenAlert').style.display = 'none';
+        }
+
+        // Mostrar la alerta al cargar la página
+        window.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('fullscreenAlert').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
